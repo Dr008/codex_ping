@@ -11,7 +11,7 @@
   "icon": "logo (4).png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YasYar/codex-ping-extension.git"
+    "url": "https://github.com/Dr008/codex_ping.git"
   },
   "engines": {
     "vscode": "^1.96.0"
