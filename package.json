@@ -1,0 +1,43 @@
+{
+  "name": "codex-ping",
+  "displayName": "Codex Ping",
+  "version": "0.1.0",
+  "publisher": "YasYar",
+  "author": {
+    "name": "YasYar",
+    "email": "yasins.yar@gmail.com"
+  },
+  "license": "MIT",
+  "icon": "logo (4).png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YasYar/codex-ping-extension.git"
+  },
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codex-ping.showInfo",
+        "title": "Codex Ping: Show Details"
+      }
+    ]
+  },
+  "scripts": {
+    "bundle": "esbuild src/extension.ts --bundle --platform=node --format=cjs --external:vscode --sourcemap --outfile=out/extension.js"
+  },
+  "devDependencies": {
+    "@types/node": "18.x",
+    "@types/vscode": "^1.96.0",
+    "esbuild": "^0.25.10",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "axios": "^1.13.4"
+  }
+}
